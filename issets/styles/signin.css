@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background: url(../img/allmovies.jpg) no-repeat center center/cover;
+}
+
+.background-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    max-width: 400px;
+    width: 100%;
+}
+
+.logo h1{
+   color: red;
+   font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 15px;
+   
+    margin: 10px 0;
+    background: #333;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.login-form input:focus{
+     outline:1px solid red;
+}
+.signin-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.or-divider {
+    margin: 20px 0;
+    display: inline-flex;
+    justify-content: space-around;
+    /* margin: 0; */
+    align-items: center;
+    color: gray;
+}
+
+.or-divider span {
+    padding: 0 10px;
+    width: 100px;
+    margin: 0 10px 0 10px;
+    height: 2px;
+    background-color: red;
+}
+
+.signin-code-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: gray;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.forgot-password {
+    display: block;
+    margin: 20px 0;
+    color: gray;
+    text-decoration: none;
+}
+
+.remember-me {
+    display:grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    width: 80%;
+    /* background: red; */
+    margin: 10px;
+}
+
+.signup-now {
+    margin-top: 20px;
+    color: gray;
+}
+
+.signup-now a {
+    color: white;
+    text-decoration: none;
+}
+

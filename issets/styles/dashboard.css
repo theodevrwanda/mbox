@@ -1,0 +1,339 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+td img{
+  width: 50px;
+  border-radius: 100%;
+  height: 50px;
+  cursor: pointer;
+}
+td img:hover{
+  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.349));
+}
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #02000f;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    height: 100vh;
+}
+.sidebar .userprofire img{
+    width: 200px;
+    border-radius: 100%;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size:20px;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left:250px;
+    padding: 20px;
+    background-color: rgb(216, 212, 212);
+    width: calc(100% - 250px);
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stat-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    font-size: 18px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.btn-add {
+    margin-bottom: 20px;
+}
+
+.btn-edit {
+    background-color: #4CAF50;
+}
+
+.btn-edit:hover {
+    background-color: #45a049;
+}
+
+.btn-delete {
+    background-color: #f44336;
+}
+
+.btn-delete:hover {
+    background-color: #e53935;
+}
+/* recently movies */
+/* all you to movies  */
+.movie-category {
+    width: 100%;
+    height: auto;
+    background-color: #181818;
+    color: #fff;
+    margin-bottom: 0px;
+  }
+  
+  .category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0px 0 10px 10px;
+  }
+  
+  .category-header h2 {
+    font-size: 1.5em;
+    color:black;
+    line-height: 60px;
+    align-items: center;
+  }
+  
+  .category-header span {
+    font-size: 1.2em;
+    margin-left: 5px;
+  }
+  .category-header h2 hr{
+    width: 45%;
+    height: 4px;
+    background: red;
+    border: none;
+  }
+  .nav-buttons {
+    display: flex;
+    margin-right: 20px;
+  }
+  
+  .nav-buttons button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 4px;
+  }
+  
+  .nav-buttons button:hover {
+    background-color: #555;
+  }
+  
+  /* Horizontal scrolling movie row */
+  .movie-row {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    gap: 10px;
+    overflow-x:hidden;
+    width: 98%;
+    margin: 10px 1% 10px 1%;
+    /* scroll-behavior: smooth; */
+  }
+  .movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px; /* Space between movie items */
+}
+  .movie-item {
+    background-color: #222;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.5s ease;
+    width: 250px;  /* Fixed width for consistency */
+    height: 400px; /* Fixed height for all movie items */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie-item:hover {
+    transform: translateY(-10px); /* Hover effect to lift the card */
+}
+
+.download {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.116);
+    background: red;
+    margin: 5px auto 10px auto;
+}
+.download:hover{
+    background: rgb(201, 0, 0);
+}
+.movie-image-container {
+    position: relative;
+    overflow: hidden;
+    max-height: 200px; /* Ensures image container does not exceed set height */
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.movie-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-radius: 4px;
+    transition: opacity 0.3s ease;
+}
+
+.movie-image-container .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+.movie-item h1 {
+    font-size:16px;
+    margin: 10px 0;
+    color: white;
+}
+
+.movie-item p {
+    font-size: 0.9em;
+    margin:2px 0;
+    color: #ddd;
+}
+
+.movie-item small {
+    color: #888;
+}
+    
+  /* Responsive */
+  @media (max-width: 768px) {
+    .category-header h2 {
+        font-size: 1.2em;
+    }
+    .nav-buttons button {
+        font-size: 0.9em;
+        padding: 4px 8px;
+    }
+  
+    .movie-item {
+        min-width: 120px;
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background: rgba(0, 0, 0, 0.603);
+  }
+  
+  /* Track (background of the scrollbar) */
+  ::-webkit-scrollbar-track {
+    background:rgba(0, 0, 0, 0.603); 
+  }
+  /* Handle (the scrolling part) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 10px;
+    border: 3px solid rgb(0, 0, 0); 
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+/* carousel */

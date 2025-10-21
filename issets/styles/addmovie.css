@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f4f7;
+    color: #000;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-image {
+    width: 30%;
+    background: linear-gradient(rgba(0, 0, 0, 0.582), black), url('../img/Thor.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: changeBackground 50s infinite; /* 5s per image for 10 images = 50s total */
+    transition: background 1s ease-in-out;
+}
+
+/* Keyframes for changing background image */
+@keyframes changeBackground {
+    0% { background-image: linear-gradient(rgba(0, 0, 0, 0.582), black), url('../img/Thor.jpg'); }
+    10% { background-image: linear-gradient(rgba(0, 0, 0, 0.582), black), url('../img/allmovies.jpg'); }
+    20% { background-image: linear-gradient(rgba(0, 0, 0, 0.582), black), url('../img/aquaman.jpg'); }
+    30% { background-image: linear-gradient(rgba(0, 0, 0, 0.582), black), url('../img/ant_man.jpg'); }
+    40% { background-image: linear-gradient(rgba(0, 0, 0, 0.582), black), url('../img/1899.jpg'); }
+    50% { background-image: linear-gradient(rgba(0, 0, 0, 0.582), black), url('../img/wednesday.jpg'); }
+    60% { background-image: linear-gradient(rgba(0, 0, 0, 0.582), black), url('../img/plane.jpg'); }
+    70% { background-image: linear-gradient(rgba(0, 0, 0, 0.582), black), url('../img/money_heist.jpg'); }
+    80% { background-image: linear-gradient(rgba(0, 0, 0, 0.582), black), url('../img/john_wick.jfif'); }
+    90% { background-image: linear-gradient(rgba(0, 0, 0, 0.582), black), url('../img/game_of_thrones.jpg'); }
+    100% { background-image: linear-gradient(rgba(0, 0, 0, 0.582), black), url('../img/Thor.jpg'); } 
+}
+
+.movie-form {
+    width: 70%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 40px;
+    background-color: #f2f9fd; /* Light blue background */
+}
+
+.movie-form h2 {
+    margin-bottom: 20px;
+    color: #0d47a1; /* Dark blue text */
+}
+
+.movie-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.movie-form input, .movie-form textarea ,select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #0d47a1;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+}
+.dis_mess{
+    width: 100%;
+    background:linear-gradient(100deg,rgb(1, 1, 92),blue);
+    padding: 10px;
+    min-height: 50px;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.movie-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.movie-form button {
+    padding: 10px 20px;
+    background-color: #0d47a1; /* Dark blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.movie-form button:hover {
+    background-color: #1565c0; /* Slightly lighter blue */
+}
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background: rgba(0, 0, 0, 0.603);
+  }
+  
+  /* Track (background of the scrollbar) */
+  ::-webkit-scrollbar-track {
+    background:rgba(0, 0, 0, 0.603); 
+  }
+  /* Handle (the scrolling part) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 10px;
+    border: 3px solid rgb(0, 0, 0); 
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

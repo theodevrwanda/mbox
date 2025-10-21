@@ -1,0 +1,292 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color:rgb(1, 1, 26);
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.932);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Styles */
+.form-section {
+    margin-bottom: 40px;
+}
+
+.user-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1 1 45%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Table Styles */
+.user-list-section {
+    margin-top: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #02000f;
+    color: white;
+    /* position: fixed; */
+    height: 100vh;
+}
+.sidebar .userprofire img{
+    width: 200px;
+    margin: 15px 0px 10px 25px;
+    border-radius: 100%;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size:20px;
+    margin-left: 23px;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+/* content */
+.content{
+    width:82%;
+    margin-left:1px ;
+    height: 100vh;
+    background: rgb(240, 237, 237);
+}
+.content nav{
+    width: 100%;
+    height: 60px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.377);
+    display: flex;
+    justify-content: space-between;
+}
+.content nav .logo h1{
+ color: red;
+ font-size: 50px;
+ font-weight: bold;
+ line-height: 60px;
+ margin-left: 10px;
+}
+.content nav form{
+    width: 30%;
+    height: 70%;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    background: #ddd;
+    overflow: hidden;
+    font-size: 15px;
+}
+.content nav form input{
+    width: 90%;
+    border: none;
+    outline: none;
+    height: 100%;
+    margin-left: 10px;
+background: transparent;
+}
+.content nav form button{
+    width: 50px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    height: 100%;
+    background: blue;
+}
+.content nav .button{
+    width: 150px;
+    height: 70%;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin: 10px 20px;
+}
+.allcontent{
+    width: 100%;
+    height: 90.8%;
+    background: transparent;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.dashboard{
+    margin:20px 0  40px 20px;
+    background: rgb(231, 228, 228);
+    border-radius: 10px;
+    width: 50%;
+}
+
+.dashboard h1 {
+    font-size: 28px;
+line-height: 60px;
+margin-left: 20px;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-box {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stat-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    font-size: 18px;
+}
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-table th,
+.user-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.user-table th {
+    background-color: #333;
+    color: white;
+}
+
+.user-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background: rgba(0, 0, 0, 0.603);
+  }
+  
+  /* Track (background of the scrollbar) */
+  ::-webkit-scrollbar-track {
+    background:rgba(0, 0, 0, 0.603); 
+  }
+  /* Handle (the scrolling part) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    width: 3px;
+    border-radius: 10px;
+    border: 3px solid transparent; 
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+/* Action Button Styles */
+.btn-edit, .btn-delete {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    margin-right: 5px;
+}
+
+.btn-edit {
+    background-color:blue;
+}
+
+.btn-delete {
+    background-color: #f44336;
+}
+
+.btn-edit:hover {
+    background-color: black;
+}
+
+.btn-delete:hover {
+    background-color: #1a0d0d;
+}
